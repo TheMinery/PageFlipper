@@ -1,27 +1,88 @@
-#main {
-    position:fixed;
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: url(/images/bg.jpg) no-repeat center center fixed;;
+    background-size: cover;
+}
+
+#canvas {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  
+}
+
+section {
+    position: absolute;
+    border: none;
+    padding: 0;
+    overflow: hidden;
+    overflow-x: hidden;
+}
+
+section:first-child {
+    height: 100%;
+    width: 50%;
+    left: 0px;
+}
+
+section iframe {
+    height: 100%;
+    width: 100%;
+}
+
+section:nth-child(2) {
+    height: 100%;
+    width: 50%;
+    right: 0px;
+}
+
+/*#main {
+    position: relative;
     top:0px;
     left:0px;
     right:0px;
     width:100%;
-    height:90%;
+    height:100%;
     border:none;
     margin:0;
     padding:0;
     overflow:hidden; z-index:999999;
 }
 
-#info {
-    position:fixed;
-    bottom:0px;
-    left:0px;
-    bottom:0px;
-    right:0px;
-    width:100%;
-    height:10%;
-    border:none;
-    margin:0;
-    padding:0; 
-    overflow:hidden;
-    z-index:999999;
+#weather {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    width: 29%;
+    height: 100%;
+    border: none;
+    margin: 0;
+    padding: 0; 
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    z-index: 999999;
 }
+
+#news {
+    position: relative;
+    right: 0px;
+    top: 0px;
+    width: 59%;
+    height: 100%;
+    border: none;
+    margin: 0;
+    padding: 0; 
+    overflow: hidden;
+    z-index: 999999;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}*/
