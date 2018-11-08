@@ -11,15 +11,15 @@ body {
 table {
     width: 90%;
     margin: auto;
-    border-spacing: 12px 16px;
+    border-spacing: 8px 12px;
     border-collapse: separate;
     margin-top: 1em;
 }
 
 table tr td, table tr th {
     background-color: #f6f7f8;
-    padding: 1em .5em;
-    margin: .5em;
+    padding: 1em .4em;
+    margin: .4em;
     text-align: center;
     font-weight: bold;
 }
