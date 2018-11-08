@@ -46,10 +46,11 @@ section:nth-child(2) {
 
 div#news {
     position: absolute;
-    height: 100px;
+    height: 90px;
     width: 100%;
     background-color: rgb(0,47,85);
     bottom: 20px;
+    overflow: hidden;
     overflow-x: hidden;
     color: white;
 }
@@ -58,10 +59,10 @@ div#newsLabel {
     display: table-cell;
     vertical-align: middle;
     text-align: right;
-    width: 300px;
-    height: 100px;
+    width: 200px;
+    height: 90px;
     padding-right: 100px;
-    background-color: black;
+    background-color: rgb(35,31,32);
     background-image: url(/images/bg-slash.jpg);
     background-position: right top;
     background-size: 100px 100px;
@@ -72,8 +73,10 @@ div#newsLabel {
 }
 
 div#newsContent {
-    padding-left: 450px;
+    padding-left: 300px;
     font-size: 125%;
+    overflow: hidden;
+    overflow-x: hidden;
 }
 
 div#newsContent > div {
@@ -82,11 +85,13 @@ div#newsContent > div {
     font-weight: bold;
     color: white;
     z-index: 1;
+    white-space: nowrap;
+    
 }
 
 
 div#newsContent > div.active {
-    top: 40px;
+    top: 35px;
     z-index: 10;
     transition: top 1s;
 }
