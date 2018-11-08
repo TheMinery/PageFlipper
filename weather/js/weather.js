@@ -13,6 +13,7 @@ function Weather() {
         //this.weatherURL = 'https://api.darksky.net/forecast/c7329eeb25fbeb17e6b06f902ba9575a/40.7127,-74.0059?units=ca';
         this.weatherURL = '/weather/fetch.php';
         this.skyconInit();
+        setInterval(this.fetchWeather.bind(this), 1800000);
     }
 
     this.handleResponse = function(evt) {
