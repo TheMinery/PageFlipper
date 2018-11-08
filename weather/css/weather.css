@@ -9,7 +9,7 @@ div#weather {
     left: 0;
     top: 30px;
     width: 180px;
-    height: 226px;
+    height: 244px;
     background-color: #f39c12;
     font-size: 10px;
     color: white;
@@ -51,24 +51,29 @@ div#tmp {
 }
 
 div#deets {
-    font-size: 8px;
+    font-size: 10px;
+    background-color: #faaa23;
 }
 
 div#deets > div {
     overflow: hidden;
-    display: inline-block;
+    display: block;
     margin: 0px 2px 0px 0px;
     white-space: nowrap;
-    width: 54px;
-    background-color: #faaa23;
-    padding: 3px 0px;
+    width: 81px;
 }
 
-div#deets div:first-child {
+div#deets > div:first-child {
+    float: left;
+    margin-left: 3px;
 }
 
-div#deets div:nth-child(2) {
+div#deets > div:nth-child(2) {
+    float: right;
+    margin-right: 3px;
 }
 
-div#deets div:nth-child(3) {
+div#deets > div:nth-child(3) {
+    clear:both;
+    width:100%;
 }

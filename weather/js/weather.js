@@ -9,8 +9,10 @@ function Weather() {
         this.contHumidity = document.getElementById('humidity');
         this.contUV = document.getElementById('uv');
         this.contCloud = document.getElementById('cloud');
+        this.contSkycon = document.getElementById('icon1')
         //this.weatherURL = 'https://api.darksky.net/forecast/c7329eeb25fbeb17e6b06f902ba9575a/40.7127,-74.0059?units=ca';
         this.weatherURL = '/weather/fetch.php';
+        this.skyconInit();
     }
 
     this.handleResponse = function(evt) {
@@ -24,12 +26,23 @@ function Weather() {
             this.contHumidity.innerHTML = this.objWeather.currently.humidity * 100;
             this.contUV.innerHTML = this.objWeather.currently.uvIndex;
             this.contCloud.innerHTML = this.objWeather.currently.cloudCover * 100;
+            this.setSkycon(this.objWeather.currently.icon)
         }
     }
 
     this.fetchWeather = function() {
         this.xhr.open('GET', this.weatherURL, true);
         this.xhr.send();
+    }
+
+    this.skyconInit = function() {
+        this.skycons = new Skycons({"color": "white"});
+        this.skycons.add(this.contSkycon, 'fog')
+        this.skycons.play();
+    }
+
+    this.setSkycon = function(icon) {
+        this.skycons.set(this.contSkycon, icon);
     }
 }
 

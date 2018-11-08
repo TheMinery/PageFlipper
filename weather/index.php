@@ -18,9 +18,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+    <script src="./js/skycons.js"></script>
     <script src="./js/weather.js"></script>
-<link rel="stylesheet" type="text/css" href="./css/weather.css" />
+    <link rel="stylesheet" type="text/css" href="./css/weather.css" />
 </head>
 <body>
 <!--<?php /*print_r($objNews);*/ ?>-->
@@ -32,15 +32,14 @@
         <div>
             <div>Real Feel: <span id="realFeel"></span>&#176;</div>
             <div>Wind: <span id="wind"></span>km/h</div>
+            <div>Cloud: <span id="cloud"></span>%</div>
         </div>
         <div>
             <div>Press: <span id="pressure"></span>hPa</div>
             <div>Humid: <span id="humidity"></span>%</div>
-        </div>
-        <div>
             <div>UV Index: <span id="uv"></span></div>
-            <div>Cloud: <span id="cloud"></span>%</div>
         </div>
+        <div></div>
 </div>
 </body>
 </html>
