@@ -113,17 +113,17 @@ div#newsContent > div.inactive {
     /*background-color: rgb(0,47,85);
     border: 2px outset rgb(0,171,232);
     color: white;*/
-    color: #CA944E;
+    color: white;
 }
 
 #clock-face{
-    stroke:#CA944E;
+    stroke:white;
     stroke-width:2px;
     /*fill:rgb(0,171,232);*/
 }
 
 #h-hand, #m-hand, #s-hand, #s-tail{
-    stroke:#CA944E;
+    stroke:white;
     stroke-linecap:round;
 }
 
@@ -142,10 +142,10 @@ div#newsContent > div.inactive {
 .time-text{
     text-align:center;
     /*background-color: rgb(0,171,232);*/
-    color: #CA944E;
+    color: white;
 }
 
 text {
-    color: #CA944E;
-    stroke: #CA944E;
+    color: white;
+    stroke: white;
 }
