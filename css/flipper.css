@@ -119,11 +119,11 @@ div#newsContent > div.inactive {
 #clock-face{
     stroke:white;
     stroke-width:2px;
-    fill:rgb(0,171,232);
+    /*fill:rgb(0,171,232);*/
 }
 
 #h-hand, #m-hand, #s-hand, #s-tail{
-    stroke:white;
+    stroke:#CA944E;
     stroke-linecap:round;
 }
 
