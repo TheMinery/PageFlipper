@@ -101,3 +101,50 @@ div#newsContent > div.inactive {
     z-index: 10;
     transition: top 1.5s;
 }
+
+/******* CLOCK *******/
+
+.analog-clock{
+    position: absolute;
+    right: 3px;
+    top: 30px;
+    width:140px;
+    height:166px;
+    background-color: rgb(0,47,85);
+    border: 2px outset rgb(0,171,232);
+    color: white;
+}
+
+#clock-face{
+    stroke:white;
+    stroke-width:2px;
+    fill:rgb(0,171,232);
+}
+
+#h-hand, #m-hand, #s-hand, #s-tail{
+    stroke:white;
+    stroke-linecap:round;
+}
+
+#h-hand{
+    stroke-width:3px;
+}
+
+#m-hand{
+    stroke-width:2px;
+}
+
+#s-hand{
+    stroke-width:1px;
+}
+
+.time-text{
+    text-align:center;
+    background-color: rgb(0,171,232);
+    color: white;
+}
+
+text {
+    color: white;
+    stroke: white;
+}
