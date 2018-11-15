@@ -106,13 +106,14 @@ div#newsContent > div.inactive {
 
 .analog-clock{
     position: absolute;
-    right: 3px;
-    top: 30px;
+    right: 275px;
+    top: 445px;
     width:140px;
     height:166px;
-    background-color: rgb(0,47,85);
+    /*background-color: rgb(0,47,85);
     border: 2px outset rgb(0,171,232);
-    color: white;
+    color: white;*/
+    color: #CA944E;
 }
 
 #clock-face{
@@ -140,11 +141,11 @@ div#newsContent > div.inactive {
 
 .time-text{
     text-align:center;
-    background-color: rgb(0,171,232);
-    color: white;
+    /*background-color: rgb(0,171,232);*/
+    color: #CA944E;
 }
 
 text {
-    color: white;
-    stroke: white;
+    color: #CA944E;
+    stroke: #CA944E;
 }
