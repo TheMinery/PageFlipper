@@ -117,7 +117,7 @@ div#newsContent > div.inactive {
 }
 
 #clock-face{
-    stroke:white;
+    stroke:#CA944E;
     stroke-width:2px;
     /*fill:rgb(0,171,232);*/
 }
