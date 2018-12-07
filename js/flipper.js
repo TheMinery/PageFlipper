@@ -2,12 +2,18 @@ var PageFlipper = function() {
     this.init = function() {
         this.frameMain = document.getElementById('main');
         this.frameWeather = document.getElementById('weather');
-        setInterval(this.refresh.bind(this), 1800000);
+        setInterval(this.refresh.bind(this), 60000);
     }
 
     this.refresh = function() {
-        this.frameMain.contentWindow.location.reload();
-        console.log('Weather reloaded');
+        console.log(this.frameMain.contentWindow.location.href)
+        if (this.frameMain.contentWindow.location.href.search('calendar') > -1) {
+            this.frameMain.contentWindow.location.href = '/pricing/';
+        } else {
+            this.frameMain.contentWindow.location.href = '/calendar/';
+        }
+        //this.frameMain.contentWindow.location.reload();
+        //console.log('Weather reloaded');
     }
 }
 
@@ -40,7 +46,7 @@ var NewsBanner = function() {
     }
 
     this.haltNews = function() {
-        console.log('Halt News');
+        //console.log('Halt News');
         if (this.activeNewsItemIdx) {
             clearInterval(this.objInterval);
             this.deactivateNewsItem(this.activeNewsItemIdx);
@@ -73,7 +79,7 @@ var NewsBanner = function() {
         }
         
         if (this.activeNewsItemIdx < this.arElNews.length - 1) { this.activeNewsItemIdx++; } else { this.activeNewsItemIdx = 0; } 
-        console.log('this.activeNewsItemIdx = ' + this.activeNewsItemIdx);
+        //console.log('this.activeNewsItemIdx = ' + this.activeNewsItemIdx);
         this.activateNewsItem(this.activeNewsItemIdx);
 
     }
@@ -87,7 +93,7 @@ var NewsBanner = function() {
             this.arElNews[i].appendChild(textNode);
             this.contContent.appendChild(this.arElNews[i]); 
         }
-        console.log('this.arElNews.length = ' + this.arElNews.length);
+        //console.log('this.arElNews.length = ' + this.arElNews.length);
     }
 
     this.purgeNews = function() {
