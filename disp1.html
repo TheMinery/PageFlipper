@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="refresh" content="43200">
+    <script type="text/javascript" src="/js/flipper.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/flipper.css" />
+</head>
+<body>
+    <div id="canvas">
+        <section>
+            <iframe id="main" src="/pricing/" style="" frameborder="0"></iframe>
+        </section>
+        <section>
+            <iframe scrolling="no" id="weather" src="/weather/" style="" frameborder="0"></iframe>
+        </section>
+    </div>
+    <div id="news">
+        <div id="newsLabel">Daily News</div>
+        <div id="newsContent"></div>
+    </div>
+    <div class="analog-clock">
+        <svg width="140" height="140">
+            <circle id="clock-face" cx="70" cy="70" r="65" />
+            <line id="h-hand" x1="70" y1="70" x2="70" y2="38" />
+            <line id="m-hand" x1="70" y1="70" x2="70" y2="20" />
+            <line id="s-hand" x1="70" y1="70" x2="70" y2="12" />
+            <line id="s-tail" x1="70" y1="70" x2="70" y2="56" />
+            <text x="63" y="20">12</text>
+            <text x="120" y="77">3</text>
+            <text x="66" y="130">6</text>
+            <text x="11" y="77">9</text>
+        </svg>
+        <div class="time-text">
+            <span id="hr">00</span>
+            <span>:</span>
+            <span id="min">00</span>
+            <span>:</span>
+            <span id="sec">00</span>
+            <span id="suffix">--</span>
+        </div>
+    </div>
+</body>
+</html>
