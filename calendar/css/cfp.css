@@ -22,6 +22,7 @@ table tr td, table tr th {
     margin: .4em;
     text-align: center;
     font-weight: bold;
+    vertical-align: middle;
 }
 
 table tr th {
@@ -51,6 +52,7 @@ table tr td:first-child div:first-child {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 110%;
+    min-height: 55px;
 }
 
 h3 {

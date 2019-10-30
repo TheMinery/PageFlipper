@@ -45,7 +45,7 @@ $thisDay = $startingDate;
         <?php $thisDay = strtotime('+1 day', $thisDay); ?>
         <?php if ((date('w', $thisDay) != 0) && (date('w', $thisDay) != 6)) : ?>
         <tr>
-            <td width="30%"><div><?php echo date('l', $thisDay); ?></div><div><?php echo date('F j, Y', $thisDay); ?></div></td>
+            <td width="30%"><div><?php echo date('l', $thisDay); ?><br /><?php echo date('F j, Y', $thisDay); ?></div></td>
             <td width="35%"><?php echo eventsForDate($thisDay, $arConference); ?></td>
             <td width="35%"><?php echo eventsForDate($thisDay, $arMeeting); ?></td>
         </tr>

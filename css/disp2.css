@@ -28,7 +28,7 @@ section {
 
 section:first-child {
     height: 100%;
-    width: 80%;
+    width: 100%;
     left: 0px;
 }
 
@@ -37,8 +37,8 @@ section iframe {
     width: 100%;
 }
 
-section:nth-child(2) {
+/*section:nth-child(2) {
     height: 100%;
     width: 20%;
     right: 0px;
-}
+}*/
