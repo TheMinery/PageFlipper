@@ -32,8 +32,8 @@ $thisDay = $startingDate;
 <link rel="stylesheet" type="text/css" href="./css/cfp.css" />
 </head>
 <body>
-<!-- <?php print_r($arCalMeeting); ?> -->
-<!-- <?php print_r($arMeeting); ?> -->
+<!-- <?php /*print_r($arCalMeeting); ?> -->
+<!-- <?php print_r($arMeeting);*/ ?> -->
 <section>
     <table id=tblCalendar">
         <tr>    

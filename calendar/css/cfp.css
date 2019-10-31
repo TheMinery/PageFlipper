@@ -1,19 +1,35 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+html {
+    height: 100%;
+}
+
 body {
     /*background: url(../images/people-working.jpg) no-repeat;*/
     background-size: cover;
     background-position: center 2px;
     font-size: 110%;
     font-family: 'Roboto', sans-serif;
+    height: 100%;
+}
+
+section {
+    height: 100%;
+    width: 100%;
+    position: relative
 }
 
 table {
     width: 90%;
-    margin: auto;
+    /*margin: auto;
     border-spacing: 8px 12px;
     border-collapse: separate;
-    margin-top: 1em;
+    margin-top: 1em;*/
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+
 }
 
 table tr td, table tr th {
